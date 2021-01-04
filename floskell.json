@@ -1,0 +1,22 @@
+{
+  "extensions": ["TypeApplications"],
+  "formatting": {
+    "align": {
+      "case": true,
+      "class": false,
+      "import-module": true,
+      "import-spec": true,
+      "let-binds": true,
+      "limits": [10, 25],
+      "record-fields": true,
+      "where": true
+    },
+    "indent": {
+      "do": "align-or-indent-by 4"
+    },
+    "options": {
+      "align-sum-type-decl": true,
+      "decl-no-blank-lines": ["where"]
+    }
+  }
+}

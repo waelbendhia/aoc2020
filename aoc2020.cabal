@@ -1,0 +1,106 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 6983b402e2b4e9487982ef7737dd4748e550a69015a7eaf57ddd7e05d0c5b84f
+
+name:           aoc2020
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/waelbendhia/aoc2020#readme>
+homepage:       https://github.com/waelbendhia/aoc2020#readme
+bug-reports:    https://github.com/waelbendhia/aoc2020/issues
+author:         Wael Ben Dhia
+maintainer:     waelbendhia@gmail.com
+copyright:      (c) infinity Wael Ben Dhia
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/waelbendhia/aoc2020
+
+library
+  exposed-modules:
+      Lib
+      Puzzles.Day1
+      Puzzles.Day10
+      Puzzles.Day11
+      Puzzles.Day12
+      Puzzles.Day13
+      Puzzles.Day2
+      Puzzles.Day3
+      Puzzles.Day4
+      Puzzles.Day5
+      Puzzles.Day6
+      Puzzles.Day7
+      Puzzles.Day8
+      Puzzles.Day9
+      Puzzles.Input1
+      Puzzles.Input10
+      Puzzles.Input11
+      Puzzles.Input12
+      Puzzles.Input13
+      Puzzles.Input2
+      Puzzles.Input3
+      Puzzles.Input4
+      Puzzles.Input5
+      Puzzles.Input6
+      Puzzles.Input7
+      Puzzles.Input8
+      Puzzles.Input9
+  other-modules:
+      Paths_aoc2020
+  hs-source-dirs:
+      src
+  default-extensions: GADTs FlexibleContexts OverloadedStrings TypeApplications
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , parsec
+    , polysemy
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable aoc2020-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_aoc2020
+  hs-source-dirs:
+      app
+  default-extensions: GADTs FlexibleContexts OverloadedStrings TypeApplications
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2020
+    , base >=4.7 && <5
+    , containers
+    , parsec
+    , polysemy
+    , text
+    , vector
+  default-language: Haskell2010
+
+test-suite aoc2020-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_aoc2020
+  hs-source-dirs:
+      test
+  default-extensions: GADTs FlexibleContexts OverloadedStrings TypeApplications
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2020
+    , base >=4.7 && <5
+    , containers
+    , parsec
+    , polysemy
+    , text
+    , vector
+  default-language: Haskell2010
