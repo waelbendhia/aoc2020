@@ -1,7 +1,8 @@
 module Puzzles.Day3 ( part1, part2 ) where
 
-import           Puzzles.Input3
 import qualified Data.Text      as T
+
+import           Puzzles.Input3
 
 part1 :: Integer
 part1 = treesPerSlope 3 1
@@ -15,5 +16,5 @@ treesPerSlope sx sy = go 0 input
         + if T.index r x == '#' then 1 else 0
 
 part2 :: Integer
-part2 = product $ uncurry treesPerSlope
-    <$> [ ( 1, 1 ), ( 3, 1 ), ( 5, 1 ), ( 7, 1 ), ( 1, 2 ) ]
+part2 = product $
+    uncurry treesPerSlope <$> [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]

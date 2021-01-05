@@ -30,8 +30,10 @@ dependencies:
 default-extensions:
 - GADTs
 - FlexibleContexts
+- LambdaCase
 - OverloadedStrings 
 - TypeApplications
+- TupleSections
 
 library:
   source-dirs: src

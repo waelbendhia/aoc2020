@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 6983b402e2b4e9487982ef7737dd4748e550a69015a7eaf57ddd7e05d0c5b84f
+-- hash: 73ae7238cad7509fc173da96517e3c70f2186882ca1a6b3aebb3e5318bc56dc5
 
 name:           aoc2020
 version:        0.1.0.0
@@ -33,6 +33,7 @@ library
       Puzzles.Day11
       Puzzles.Day12
       Puzzles.Day13
+      Puzzles.Day14
       Puzzles.Day2
       Puzzles.Day3
       Puzzles.Day4
@@ -46,6 +47,7 @@ library
       Puzzles.Input11
       Puzzles.Input12
       Puzzles.Input13
+      Puzzles.Input14
       Puzzles.Input2
       Puzzles.Input3
       Puzzles.Input4
@@ -58,7 +60,7 @@ library
       Paths_aoc2020
   hs-source-dirs:
       src
-  default-extensions: GADTs FlexibleContexts OverloadedStrings TypeApplications
+  default-extensions: GADTs FlexibleContexts LambdaCase OverloadedStrings TypeApplications TupleSections
   build-depends:
       base >=4.7 && <5
     , containers
@@ -74,7 +76,7 @@ executable aoc2020-exe
       Paths_aoc2020
   hs-source-dirs:
       app
-  default-extensions: GADTs FlexibleContexts OverloadedStrings TypeApplications
+  default-extensions: GADTs FlexibleContexts LambdaCase OverloadedStrings TypeApplications TupleSections
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aoc2020
@@ -93,7 +95,7 @@ test-suite aoc2020-test
       Paths_aoc2020
   hs-source-dirs:
       test
-  default-extensions: GADTs FlexibleContexts OverloadedStrings TypeApplications
+  default-extensions: GADTs FlexibleContexts LambdaCase OverloadedStrings TypeApplications TupleSections
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aoc2020

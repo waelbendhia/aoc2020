@@ -2,7 +2,7 @@ module Puzzles.Input13 where
 
 import qualified Data.Text as T
 
-input :: ( T.Text, T.Text )
+input :: (T.Text, T.Text)
 input = ( "1004098"
         , "23,x,x,x,x,x,x,x,x,x,x,x,x,41,x,x,x,x,x,x,x,x,x,509,x,x,x,x,x,x,x,x,x,x,x,x,13,17,x,x,x,x,x,x,x,x,x,x,x,x,x,x,29,x,401,x,x,x,x,x,37,x,x,x,x,x,x,x,x,x,x,x,x,19"
         )
